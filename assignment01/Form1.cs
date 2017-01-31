@@ -26,7 +26,7 @@ namespace assignment01
             form = this;
             thread = new Thread(new ThreadStart(run));
             thread.Start();
-
+            
 
         }
 
@@ -49,7 +49,7 @@ namespace assignment01
                 form.Invoke(new MethodInvoker(form.Refresh));
 
             }
-
+            
         }
 
         protected override void OnKeyDown(KeyEventArgs e)
@@ -82,7 +82,7 @@ namespace assignment01
 
         private static void Iterate()
         {
-            if (song == false)
+            if(song == false)
             {
                 player.PlayLooping();
                 song = true;
@@ -104,10 +104,10 @@ namespace assignment01
                 }
             }
             System.Drawing.Font font = new System.Drawing.Font("Comic Sans MS", 12);
-            e.Graphics.DrawString("Iterations: " + counter.ToString(), font, Brushes.Black, ClientSize.Width / 2, 100);
+            e.Graphics.DrawString("Iterations: "+counter.ToString(), font, Brushes.Black, ClientSize.Width/2, 100);
             e.Graphics.DrawString("Press R for a Rave! (WARNING: Flashing Colors)", font, Brushes.Black, ClientSize.Width / 5, 25);
             e.Graphics.DrawString("Press W to tank framerate", font, Brushes.Black, ClientSize.Width / 5, 45);
-            e.Graphics.DrawString(running_fps.ToString(), font, Brushes.Black, ClientSize.Width / 2 - 30, ClientSize.Height - 50);
+            e.Graphics.DrawString(running_fps.ToString(), font, Brushes.Black, ClientSize.Width/2 - 30, ClientSize.Height - 50);
         }
 
 
