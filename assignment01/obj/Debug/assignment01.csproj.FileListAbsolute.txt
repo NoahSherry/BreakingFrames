@@ -1,0 +1,8 @@
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\bin\Debug\assignment01.exe.config
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\obj\Debug\assignment01.csprojResolveAssemblyReference.cache
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\obj\Debug\assignment01.Properties.Resources.resources
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\obj\Debug\assignment01.csproj.GenerateResource.Cache
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\bin\Debug\assignment01.exe
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\bin\Debug\assignment01.pdb
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\obj\Debug\assignment01.exe
+C:\Users\Noah\Desktop\GameProgramming\assignment01\assignment01\obj\Debug\assignment01.pdb

@@ -11,7 +11,8 @@ namespace assignment01
     {
         public static Form form;
         public static Thread thread;
-        public static bool song = false;
+        public static bool song = true;
+        public static bool RAVE = false;
         public static int counter = 2;
         public static bool color = false;
         public static int fps = 30;
@@ -58,9 +59,18 @@ namespace assignment01
             {
                 counter += 2;
             }
-            else if (e.KeyCode == Keys.R)
+            if (e.KeyCode == Keys.R)
             {
-                color = !color;
+                if(RAVE == false)
+                {
+                    RAVE = true;
+                    song = false;
+                }
+                else
+                {
+                    RAVE = false;
+                    player.Stop();
+                }
             }
         }
 
@@ -95,11 +105,16 @@ namespace assignment01
             DateTime now = DateTime.Now;
             for (int i = counter; i > 0; i--)
             {
-                Random rng = new Random((int)(i * Math.Sin(v) * Math.Sin(i) * 12));
-                Color NoahColor = Color.FromArgb(rng.Next(256), rng.Next(256), rng.Next(256));
-                e.Graphics.DrawImage(Properties.Resources.sax, v, v, v, v);
-                if (color)
+                if (RAVE == false)
                 {
+                    e.Graphics.FillRectangle(Brushes.Black, v, v, v, v);
+                    this.BackColor = Color.White;
+                }
+                else
+                {
+                    Random rng = new Random((int)(i * Math.Sin(v) * Math.Sin(i) * 12));
+                    Color NoahColor = Color.FromArgb(rng.Next(256), rng.Next(256), rng.Next(256));
+                    e.Graphics.DrawImage(Properties.Resources.sax, v, v, v, v);
                     this.BackColor = NoahColor;
                 }
             }
