@@ -30,10 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Width = 1080;
+            this.Height = 720;
             this.Text = "Form1";
         }
 
         #endregion
     }
 }
-
